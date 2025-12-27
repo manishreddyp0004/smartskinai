@@ -28,16 +28,15 @@ This project bridges the gap between AI technology and accessible healthcare, pa
 
 | Name | Registration No. |
 |------|------------------|
-| Bala Arun Polishetty | 23BCE8173 |
-| Bandaru Chandra Mouli | 23BCE8202 |
-| Julakanti Varshith | 23BCE8221 |
-| Souda Himavamsi | 23BCE8209 |
-| Saroj Chaudhuri | 23BCE8908 |
-| Swapnil Nandi | 22BCE8406 |
+| PATLOLLA MANISH REDDY | 23R21A05P7 |
+| N S HEMA | 23R21A05P4|
+| T RAHUL | 23R21A0526|
+| R SHIVA SAI RAM | 23R21A05Q3 |
 
-**Under the Guidance of:** Prof. Ajith Jubilson E  
-**Department:** SCOPE  
-**University:** VIT-AP University
+
+**Under the Guidance of:** K Venkata Subhaiah
+**Department:** CSE
+**University:** MLR Institute Of Technology
 
 ---
 
@@ -106,8 +105,8 @@ This project bridges the gap between AI technology and accessible healthcare, pa
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/07Saroj/SmartSkinAI.git
-cd SmartSkinAI
+git clone https://github.com/manishreddyp0004/smartskinai.git
+cd smartskinai
 ```
 
 ### 2️⃣ Backend Setup
@@ -230,7 +229,7 @@ version: "3.8"
 services:
   backend:
     build: ./backend
-    container_name: SmartSkinAI-backend
+    container_name: smartskinai-backend
     ports:
       - "5000:5000"
     volumes:
@@ -243,7 +242,7 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: SmartSkinAI-frontend
+    container_name: smartskinai-frontend
     ports:
       - "3000:80"
     depends_on:
@@ -305,7 +304,7 @@ ngrok http 5000
 
 ## 🌐 Live Demo
 
-*https://07saroj.github.io/SmartSkinAI/*
+*https://manishreddyp0004.github.io/smatskinai/*
  For frontend only
 ---
 
@@ -322,15 +321,15 @@ This is an academic project. For suggestions or issues:
 
 ## 📄 License
 
-This project is created as part of the **Engineering Clinics Project** at VIT-AP University.  
-**© 2025 SmartSkinAI Team. All Rights Reserved.**
+This project is created as part of the **Engineering Clinics Project** at MLR INSTITUTE OF TECHNOLOGY.  
+**© 2025 smatskinai Team. All Rights Reserved.**
 
 ---
 
 ## 🙏 Acknowledgments
 
-- VIT-AP University & SCOPE Department
-- Prof. Ajith Jubilson E (Project Guide)
+- MLR INSTITUTE OF TECHNOLOGY
+- Dr K Venkata Subhaiah (Project Guide)
 - Open-source community (TensorFlow, Flask, Firebase)
 - Twilio for WhatsApp API
 - OpenStreetMap for geolocation services
