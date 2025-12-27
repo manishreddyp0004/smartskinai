@@ -36,7 +36,7 @@ This project bridges the gap between AI technology and accessible healthcare, pa
 
 **Under the Guidance of:** K Venkata Subhaiah
 **Department:** CSE
-**University:** MLR Institute Of Technology
+**College:** MLR Institute Of Technology
 
 ---
 
