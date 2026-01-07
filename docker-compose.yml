@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: SmartSkinAI-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/reports:/app/reports
+      - ./backend/model.keras:/app/model.keras
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/serviceAccountKey.json
+      - MODEL_PATH=/app/model.keras
+      - BASE_URL=https://smartskinai.onrender.com # Replace with your deployed backend URL
+    
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_WHATSAPP_NUMBER=${TWILIO_WHATSAPP_NUMBER}
+
+
+  frontend:
+    build: ./frontend
+    container_name: SmartSkinAI-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

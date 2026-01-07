@@ -1,0 +1,19 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Environment / credentials
+*.env
+serviceAccountKey.json
+
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+#.yml file
+2docker-compose.yml
